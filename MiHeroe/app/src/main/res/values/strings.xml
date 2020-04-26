@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Mi Heroe</string>
+    <string name="hulk_hero">hulk_hero</string>
+    <string name="name_hero">Dr. Robert Bruce Banner</string>
+    <string name="description_hero">Llamado La Masa o El Hombre Increíble es un personaje ficticio, un superhéroe que aparece en los cómics estadounidenses publicados por la editorial Marvel Comics. El personaje fue creado por los escritores Stan Lee y Jack Kirby, es un ser humanoide enorme de piel verde, corpulento y musculoso que posee una gran fortaleza física, y su alter ego el Dr. Robert Bruce Banner,​un físico físicamente débil, socialmente retraído y emocionalmente reservado, las dos personalidades existentes como independientes y con resentimiento de la otra.</string>
+    <string name="avengers_endgame">Avengers Endgame</string>
+    <string name="avengers_infinity_war">Avengers Infinity War</string>
+    <string name="thor_ragnarok">Thor Ragnarok</string>
+    <string name="avengers_age_of_ultron">Avengers Age of Ultron</string>
+</resources>
