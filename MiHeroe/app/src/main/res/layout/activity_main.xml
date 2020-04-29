@@ -5,10 +5,9 @@
         android:id="@+id/bio_scroll"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/layout_margin"
             android:layout_marginEnd="@dimen/layout_margin"
             android:orientation="vertical">
@@ -22,7 +21,7 @@
                 android:src="@drawable/inclieble_hulk" />
 
             <TextView
-                android:id="@+id/txt_name_text"
+                android:id="@+id/txt_name_hero"
                 style="@style/NameStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -40,52 +39,176 @@
             <HorizontalScrollView
                 android:id="@+id/bio_scroll_hor"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/layout_margin">
+
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="@dimen/layout_margin"
-                    android:layout_marginEnd="@dimen/layout_margin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <ImageView
-                        android:id="@+id/img_endgame_image"
+                    <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginEnd="5dp"
-                        android:contentDescription="@string/avengers_endgame"
-                        android:src="@drawable/avengers_endgame"/>
+                        android:layout_height="match_parent">
 
-                    <ImageView
-                        android:id="@+id/img_infinity_image"
+                        <ImageView
+                            android:id="@+id/img_endgame_image"
+                            style="@style/img_margin"
+                            android:contentDescription="@string/avengers_endgame"
+                            android:src="@drawable/avengers_endgame" />
+
+                        <TextView
+                            android:id="@+id/txt_endgame_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img_endgame_image"
+                            android:fontFamily="@font/roboto"
+                            android:text="@string/avengers_endgame"
+                            android:textAlignment="center"
+                            style="@style/NameStyleText" />
+
+                        <TextView
+                            android:id="@+id/txt_endgame_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_endgame_name"
+                            android:fontFamily="@font/roboto"
+                            android:text="@string/txt_date_endgame"
+                            android:textAlignment="center"
+                            style="@style/NameStyleText" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginEnd="5dp"
-                        android:contentDescription="@string/avengers_infinity_war"
-                        android:src="@drawable/avengers_infinity_war" />
+                        android:layout_height="match_parent">
 
-                    <ImageView
-                        android:id="@+id/img_ragnarok_image"
+                        <ImageView
+                            android:id="@+id/img_infinity_image"
+                            style="@style/img_margin"
+                            android:contentDescription="@string/avengers_infinity_war"
+                            android:src="@drawable/avengers_infinity_war" />
+
+                        <TextView
+                            android:id="@+id/txt_infinity_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img_infinity_image"
+                            android:fontFamily="@font/roboto"
+                            android:text="@string/avengers_infinity_war"
+                            android:textAlignment="center"
+                            style="@style/NameStyleText" />
+
+                        <TextView
+                            android:id="@+id/txt_infinity_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_infinity_name"
+                            android:fontFamily="@font/roboto"
+                            android:text="@string/txt_date_infinity"
+                            android:textAlignment="center"
+                            style="@style/NameStyleText" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginEnd="5dp"
-                        android:contentDescription="@string/thor_ragnarok"
-                        android:src="@drawable/thor_ragnarok" />
+                        android:layout_height="match_parent">
 
-                    <ImageView
-                        android:id="@+id/img_ultron_image"
+                        <ImageView
+                            android:id="@+id/img_ragnarok_image"
+                            style="@style/img_margin"
+                            android:contentDescription="@string/thor_ragnarok"
+                            android:src="@drawable/thor_ragnarok" />
+
+                        <TextView
+                            android:id="@+id/txt_ragnarok_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img_ragnarok_image"
+                            android:fontFamily="@font/roboto"
+                            android:text="@string/thor_ragnarok"
+                            android:textAlignment="center"
+                            style="@style/NameStyleText" />
+
+                        <TextView
+                            android:id="@+id/txt_ragnarok_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_ragnarok_name"
+                            android:fontFamily="@font/roboto"
+                            android:text="@string/txt_date_ragnarok"
+                            android:textAlignment="center"
+                            style="@style/NameStyleText" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginEnd="5dp"
-                        android:contentDescription="@string/avengers_age_of_ultron"
-                        android:src="@drawable/avengers_ultron" />
+                        android:layout_height="match_parent">
 
+                        <ImageView
+                            android:id="@+id/img_ultron_image"
+                            style="@style/img_margin"
+                            android:contentDescription="@string/avengers_age_of_ultron"
+                            android:src="@drawable/avengers_ultron" />
+
+                        <TextView
+                            android:id="@+id/txt_ultron_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img_ultron_image"
+                            android:fontFamily="@font/roboto"
+                            android:text="@string/avengers_age_of_ultron"
+                            android:textAlignment="center"
+                            style="@style/NameStyleText" />
+
+                        <TextView
+                            android:id="@+id/txt_ultron_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_ultron_name"
+                            android:fontFamily="@font/roboto"
+                            android:text="@string/txt_date_ultron"
+                            android:textAlignment="center"
+                            style="@style/NameStyleText" />
+                    </RelativeLayout>
                 </LinearLayout>
             </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/txt_nickname_hero"
+                style="@style/NameStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nickname_hero"
+                android:textAlignment="center"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txt_test_hero"
+                style="@style/NameStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/test_hero"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/edt_nickname_edit"
+                style="@style/NameStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/nickname_edit"
+                android:inputType="textPersonName"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btn_validate_nickname"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/validate_nickname"
+                android:textAlignment="center"
+                android:visibility="visible" />
         </LinearLayout>
     </ScrollView>
 </layout>

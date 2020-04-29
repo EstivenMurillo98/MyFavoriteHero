@@ -7,4 +7,12 @@
     <string name="avengers_infinity_war">Avengers Infinity War</string>
     <string name="thor_ragnarok">Thor Ragnarok</string>
     <string name="avengers_age_of_ultron">Avengers Age of Ultron</string>
+    <string name="txt_date_endgame">2019</string>
+    <string name="txt_date_infinity">2018</string>
+    <string name="txt_date_ragnarok">2017</string>
+    <string name="txt_date_ultron">2015</string>
+    <string name="test_hero">¿Pregunta simple, intenta a divinar el nombre del heroe?</string>
+    <string name="nickname_edit">Ingrese el nombre</string>
+    <string name="validate_nickname">Validar</string>
+    <string name="nickname_hero">Hulk</string>
 </resources>
