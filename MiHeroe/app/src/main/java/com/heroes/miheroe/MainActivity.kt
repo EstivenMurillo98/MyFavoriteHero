@@ -28,11 +28,12 @@ class MainActivity : AppCompatActivity() {
     private fun validateNickname(view: View) {
         binding.apply {
             if ("HULK" == edtNicknameEdit.text.toString().toUpperCase()){
+                imgIconHulk.visibility = TextView.VISIBLE
                 txtNicknameHero.visibility = TextView.VISIBLE
                 txtTestHero.visibility = TextView.GONE
                 edtNicknameEdit.visibility = TextView.GONE
                 btnValidateNickname.visibility = TextView.GONE
-                txtNicknameHero.setBackgroundColor(Color.parseColor("#70964b"))
+                txtNicknameHero.setBackgroundColor(Color.parseColor("#7cb342"))
             } else {
                 if (validationToast == 0){
                     Toast.makeText(applicationContext, trackOne, Toast.LENGTH_SHORT).show()
