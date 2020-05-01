@@ -1,6 +1,7 @@
 package com.heroes.miheroe
 
 import android.content.Context
+import android.graphics.Color
 import android.os.Bundle
 import android.view.View
 import android.view.inputmethod.InputMethodManager
@@ -13,8 +14,9 @@ import com.heroes.miheroe.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivityMainBinding
+    private var validationToast = 0
     val trackOne = "Este héroe es conocido por ser uno de los más fuertes del equipo de los Avengers"
-    val trackTwo = "Uno de sus enemigos es conocido como Abominación"
+    val trackTwo = "Uno de sus principales enemigos es conocido como Abominación"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,9 +32,15 @@ class MainActivity : AppCompatActivity() {
                 txtTestHero.visibility = TextView.GONE
                 edtNicknameEdit.visibility = TextView.GONE
                 btnValidateNickname.visibility = TextView.GONE
+                txtNicknameHero.setBackgroundColor(Color.parseColor("#70964b"))
             } else {
-                Toast.makeText(applicationContext, trackOne, Toast.LENGTH_SHORT).show()
-                //Toast.makeText(applicationContext, trackOne, Toast.LENGTH_SHORT).show()
+                if (validationToast == 0){
+                    Toast.makeText(applicationContext, trackOne, Toast.LENGTH_SHORT).show()
+                    validationToast = 1
+                } else {
+                    Toast.makeText(applicationContext, trackTwo, Toast.LENGTH_SHORT).show()
+                    validationToast = 0;
+                }
             }
         }
         val imn = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager

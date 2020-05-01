@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <ScrollView
-        android:id="@+id/bio_scroll"
+        android:id="@+id/scv_scroll"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#F3F6F1F1">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/layout_margin"
             android:layout_marginEnd="@dimen/layout_margin"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/layout_margin">
 
             <ImageView
                 android:id="@+id/img_hulk_image"
@@ -37,7 +41,7 @@
                 android:textAlignment="center" />
 
             <HorizontalScrollView
-                android:id="@+id/bio_scroll_hor"
+                android:id="@+id/scv_scroll_hor"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="@dimen/layout_margin">
@@ -59,23 +63,23 @@
 
                         <TextView
                             android:id="@+id/txt_endgame_name"
+                            style="@style/NameStyleText"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@id/img_endgame_image"
                             android:fontFamily="@font/roboto"
                             android:text="@string/avengers_endgame"
-                            android:textAlignment="center"
-                            style="@style/NameStyleText" />
+                            android:textAlignment="center" />
 
                         <TextView
                             android:id="@+id/txt_endgame_date"
+                            style="@style/NameStyleText"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@id/txt_endgame_name"
                             android:fontFamily="@font/roboto"
                             android:text="@string/txt_date_endgame"
-                            android:textAlignment="center"
-                            style="@style/NameStyleText" />
+                            android:textAlignment="center" />
                     </RelativeLayout>
 
                     <RelativeLayout
@@ -90,23 +94,23 @@
 
                         <TextView
                             android:id="@+id/txt_infinity_name"
+                            style="@style/NameStyleText"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@id/img_infinity_image"
                             android:fontFamily="@font/roboto"
                             android:text="@string/avengers_infinity_war"
-                            android:textAlignment="center"
-                            style="@style/NameStyleText" />
+                            android:textAlignment="center" />
 
                         <TextView
                             android:id="@+id/txt_infinity_date"
+                            style="@style/NameStyleText"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@id/txt_infinity_name"
                             android:fontFamily="@font/roboto"
                             android:text="@string/txt_date_infinity"
-                            android:textAlignment="center"
-                            style="@style/NameStyleText" />
+                            android:textAlignment="center" />
                     </RelativeLayout>
 
                     <RelativeLayout
@@ -121,23 +125,23 @@
 
                         <TextView
                             android:id="@+id/txt_ragnarok_name"
+                            style="@style/NameStyleText"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@id/img_ragnarok_image"
                             android:fontFamily="@font/roboto"
                             android:text="@string/thor_ragnarok"
-                            android:textAlignment="center"
-                            style="@style/NameStyleText" />
+                            android:textAlignment="center" />
 
                         <TextView
                             android:id="@+id/txt_ragnarok_date"
+                            style="@style/NameStyleText"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@id/txt_ragnarok_name"
                             android:fontFamily="@font/roboto"
                             android:text="@string/txt_date_ragnarok"
-                            android:textAlignment="center"
-                            style="@style/NameStyleText" />
+                            android:textAlignment="center" />
                     </RelativeLayout>
 
                     <RelativeLayout
@@ -152,23 +156,23 @@
 
                         <TextView
                             android:id="@+id/txt_ultron_name"
+                            style="@style/NameStyleText"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@id/img_ultron_image"
                             android:fontFamily="@font/roboto"
                             android:text="@string/avengers_age_of_ultron"
-                            android:textAlignment="center"
-                            style="@style/NameStyleText" />
+                            android:textAlignment="center" />
 
                         <TextView
                             android:id="@+id/txt_ultron_date"
+                            style="@style/NameStyleText"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@id/txt_ultron_name"
                             android:fontFamily="@font/roboto"
                             android:text="@string/txt_date_ultron"
-                            android:textAlignment="center"
-                            style="@style/NameStyleText" />
+                            android:textAlignment="center" />
                     </RelativeLayout>
                 </LinearLayout>
             </HorizontalScrollView>
@@ -206,6 +210,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
+                android:background="#808285"
                 android:text="@string/validate_nickname"
                 android:textAlignment="center"
                 android:visibility="visible" />

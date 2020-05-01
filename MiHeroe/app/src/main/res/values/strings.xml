@@ -14,5 +14,5 @@
     <string name="test_hero">¿Pregunta simple, intenta a divinar el nombre del heroe?</string>
     <string name="nickname_edit">Ingrese el nombre</string>
     <string name="validate_nickname">Validar</string>
-    <string name="nickname_hero">Hulk</string>
+    <string name="nickname_hero">Felicidades acertaste es: Hulk</string>
 </resources>
